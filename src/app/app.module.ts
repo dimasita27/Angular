@@ -8,10 +8,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {TUI_LANGUAGE, TUI_RUSSIAN_LANGUAGE} from '@taiga-ui/i18n';
 import {of} from "rxjs";
+import { IndexComponent } from './main/index/index.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
