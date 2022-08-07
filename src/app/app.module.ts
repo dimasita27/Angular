@@ -1,6 +1,6 @@
 import { NgDompurifySanitizer } from "@tinkoff/ng-dompurify";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { TuiRootModule, TuiDialogModule, TuiNotificationsModule, TUI_SANITIZER } from "@taiga-ui/core";
+import { TuiRootModule, TuiDialogModule, TuiNotificationsModule, TUI_SANITIZER, TuiAlertModule } from "@taiga-ui/core";
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -9,11 +9,13 @@ import { AppComponent } from './app.component';
 import {TUI_LANGUAGE, TUI_RUSSIAN_LANGUAGE} from '@taiga-ui/i18n';
 import {of} from "rxjs";
 import { IndexComponent } from './main/index/index.component';
+import { HeaderComponent } from './layout/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent
+    IndexComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +23,8 @@ import { IndexComponent } from './main/index/index.component';
       TuiRootModule,
       BrowserAnimationsModule,
       TuiDialogModule,
-      TuiNotificationsModule
+      TuiNotificationsModule,
+      TuiAlertModule
 ],
   providers: [{provide: TUI_SANITIZER, useClass: NgDompurifySanitizer},
     {
