@@ -662,3 +662,9 @@ a:not([href]):not([tabindex]):focus {
 .overflow-hidden {
   overflow: hidden !important;
 }
+.h-100{
+  height: 100vh;
+}
+.w-100{
+  width: 100%;
+}

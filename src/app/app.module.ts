@@ -17,10 +17,13 @@ import { of } from 'rxjs';
 import { IndexComponent } from './main/index/index.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { TuiTabsModule } from '@taiga-ui/kit';
+import { HomeComponent } from './main/home/home.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [AppComponent, IndexComponent, HeaderComponent],
+  declarations: [AppComponent, IndexComponent, HeaderComponent, HomeComponent],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     TuiRootModule,
@@ -28,6 +31,8 @@ import { TuiTabsModule } from '@taiga-ui/kit';
     TuiDialogModule,
     TuiNotificationsModule,
     TuiAlertModule,
+    TuiTabsModule,
+    TuiTabsModule,
     TuiTabsModule,
   ],
   providers: [

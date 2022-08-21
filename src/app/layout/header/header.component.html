@@ -1,9 +1,20 @@
-<tui-tabs>
-  <button tuiTab>new</button>
+<tui-tabs
+  [(activeItemIndex)]="tabIndex"
+  class="d-flex flex-row justify-content-center"
+>
+  <button tuiTab>
+    {{ 'Главная' }}
+  </button>
 
-  <button  tuiTab>new</button>
+  <button tuiTab>new</button>
   <button tuiTab>new2</button>
   <button tuiTab>new3</button>
-
-
 </tui-tabs>
+
+<ng-container [ngSwitch]="tabIndex">
+  <ng-template ngSwitchCase="0">
+    <home></home>
+  </ng-template>
+
+  <ng-template ngSwitchCase="1"> </ng-template>
+</ng-container>
