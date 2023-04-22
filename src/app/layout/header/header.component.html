@@ -1,20 +1,40 @@
-<tui-tabs
-  [(activeItemIndex)]="tabIndex"
-  class="d-flex flex-row justify-content-center"
->
-  <button tuiTab>
-    {{ 'Главная' }}
-  </button>
+<div class="wrapper d-flex align-items-center justify-content-center">
+  <div class="d-flex flex-row align-items-center title">
+    <tui-svg src="tuiIconGithubLarge"></tui-svg>
+    <div class="d-flex flex-column align-items-start pl-1">
+      <span class="text-l">Анна Торгашина</span>
+      <span class="text-xxs">Бизнес тренер</span>
+    </div>
+  </div>
 
-  <button tuiTab>new</button>
-  <button tuiTab>new2</button>
-  <button tuiTab>new3</button>
-</tui-tabs>
+  <tui-tabs
+    [(activeItemIndex)]="tabIndex"
+    class="d-flex flex-row justify-content-end tabs"
+  >
+    <button tuiTab>
+      {{ "Мастер-классы / Тренинги " }}
+    </button>
 
-<ng-container [ngSwitch]="tabIndex">
+    <button tuiTab>Обо мне</button>
+    <button tuiTab>Игры-тренажеры</button>
+    <button tuiTab>Наставничество</button>
+    <button tuiTab>Отзывы</button>
+    <button tuiTab>Контакты</button>
+  </tui-tabs>
+</div>
+<div>
+  <div class="h-100" [ngSwitch]="tabIndex">
+    <ng-container *ngSwitchCase="0"> </ng-container>
+
+    <ng-container *ngSwitchCase="1"> </ng-container>
+
+    <ng-container *ngSwitchCase="2"> </ng-container>
+  </div>
+</div>
+<!--<ng-container [ngSwitch]="tabIndex">
   <ng-template ngSwitchCase="0">
     <home></home>
   </ng-template>
 
   <ng-template ngSwitchCase="1"> </ng-template>
-</ng-container>
+</ng-container>-->

@@ -3,9 +3,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   TuiRootModule,
   TuiDialogModule,
-  TuiNotificationsModule,
   TUI_SANITIZER,
   TuiAlertModule,
+  TuiSvgModule,
 } from '@taiga-ui/core';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -29,11 +29,11 @@ import { CommonModule } from '@angular/common';
     TuiRootModule,
     BrowserAnimationsModule,
     TuiDialogModule,
-    TuiNotificationsModule,
     TuiAlertModule,
     TuiTabsModule,
     TuiTabsModule,
     TuiTabsModule,
+    TuiSvgModule,
   ],
   providers: [
     { provide: TUI_SANITIZER, useClass: NgDompurifySanitizer },

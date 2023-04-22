@@ -1,6 +1,4 @@
 .test {
-  background: url('~src/assets/image/fone.jpg')  no-repeat;
-  background-size: 100%}
-
-
-
+  background: url("~src/assets/image/fone.jpg") no-repeat;
+  background-size: 100%;
+}
