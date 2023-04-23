@@ -7,17 +7,17 @@ tui-avatar {
   height: 300px !important;
 }
 
-.flex-row-test {
+.flex-row-training {
   -ms-flex-direction: row !important;
   flex-direction: row !important;
   padding: 5rem;
 }
-.flex-row-test2 {
+.flex-row-revers-training {
   -ms-flex-direction: row-reverse !important;
   flex-direction: row-reverse !important;
   padding: 5rem;
 }
 
 .background-color {
-  background-color: #F9F1F0;
+  background-color: #f9f1f0;
 }
