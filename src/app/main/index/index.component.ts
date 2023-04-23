@@ -7,6 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
   constructor() {}
-  avatar = './assets/image/kisa.jpg';
+  avatar = './assets/image/kisa.png';
   ngOnInit(): void {}
 }

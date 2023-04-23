@@ -19,7 +19,11 @@ import { TUI_LANGUAGE, TUI_RUSSIAN_LANGUAGE } from '@taiga-ui/i18n';
 import { of } from 'rxjs';
 import { IndexComponent } from './main/index/index.component';
 import { HeaderComponent } from './layout/header/header.component';
-import { TuiDataListDropdownManagerModule, TuiTabsModule } from '@taiga-ui/kit';
+import {
+  TuiDataListDropdownManagerModule,
+  TuiIslandModule,
+  TuiTabsModule,
+} from '@taiga-ui/kit';
 import { CommonModule } from '@angular/common';
 import { TuiAvatarModule } from '@taiga-ui/kit';
 import { AboutMeComponent } from './main/about-me/about-me.component';
@@ -69,6 +73,7 @@ export function factoryTranslateHttpLoader(
     TuiDataListModule,
     TuiHostedDropdownModule,
     TuiButtonModule,
+    TuiIslandModule,
     TuiDataListDropdownManagerModule,
     HttpClientModule,
     TranslateModule.forRoot({

@@ -19,7 +19,7 @@ export const trainingsArray: Trainings[] = [
     route: 'teem',
   },
   {
-    image: './assets/image/strengh.jpg',
+    image: './assets/image/strengh.png',
     name: 'Сила команды',
     description:
       'В чём сила команды, как вы думаете? В лидере? В ее составе? А может быть в заряжающей цели?' +
@@ -31,7 +31,7 @@ export const trainingsArray: Trainings[] = [
     route: 'strengh',
   },
   {
-    image: './assets/image/manager2.jpg',
+    image: './assets/image/manager2.png',
     name: 'Прокачка управленческих компетенций',
     description:
       'Если вы являетесь руководителем, вспомните, как вы им стали? Зачастую, по карьерной лестнице' +
@@ -45,7 +45,7 @@ export const trainingsArray: Trainings[] = [
     route: 'manager',
   },
   {
-    image: './assets/image/softSkill.jpg',
+    image: './assets/image/softSkill.png',
     name: 'Soft Skills',
     description:
       'Многие  понимают, что у себя важно развивать не только hard skills (профессиональные' +

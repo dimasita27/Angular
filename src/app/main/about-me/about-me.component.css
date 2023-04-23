@@ -1,4 +1,9 @@
 .test {
-  background: url("~src/assets/image/fone.jpg") no-repeat;
-  background-size: 100%;
+
+  min-height: 70vh;
 }
+
+.image{
+  height: 500px;
+}
+
