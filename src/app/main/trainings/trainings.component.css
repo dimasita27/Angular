@@ -1,0 +1,23 @@
+.trainings {
+  /*max-height: 50vh;*/
+  max-width: 60vw;
+}
+tui-avatar {
+  width: 370px !important;
+  height: 300px !important;
+}
+
+.flex-row-test {
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
+  padding: 5rem;
+}
+.flex-row-test2 {
+  -ms-flex-direction: row-reverse !important;
+  flex-direction: row-reverse !important;
+  padding: 5rem;
+}
+
+.background-color {
+  background-color: #F9F1F0;
+}

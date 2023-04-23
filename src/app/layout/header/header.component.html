@@ -9,25 +9,22 @@
       <span class="text-l">Анна Торгашина</span>
       <span class="text-xxs">Бизнес тренер</span>
     </div>
-
-
-
   </div>
 
   <tui-tabs
     [(activeItemIndex)]="tabIndex"
     class="d-flex flex-row justify-content-end tabs"
   >
-    <button tuiTab>
+    <button tuiTab class="link" routerLink="trainings">
       {{ "Мастер-классы / Тренинги " }}
     </button>
 
-    <button tuiTab><a class="link" routerLink="aboutMe"> Обо мне </a></button>
+    <button tuiTab routerLink="aboutMe">Обо мне</button>
 
-    <button tuiTab>Игры-тренажеры</button>
-    <button tuiTab>Наставничество</button>
-    <button tuiTab>Отзывы</button>
-    <button tuiTab>Контакты</button>
+    <button tuiTab routerLink="games">Игры-тренажеры</button>
+    <button tuiTab routerLink="mentoring">Наставничество</button>
+    <button tuiTab routerLink="reviews">Отзывы</button>
+    <button tuiTab routerLink="contacts">Контакты</button>
   </tui-tabs>
 </div>
 <div>

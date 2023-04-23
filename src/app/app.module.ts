@@ -24,6 +24,11 @@ import { AboutMeComponent } from './main/about-me/about-me.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TrainingsComponent } from './main/trainings/trainings.component';
+import { GamesComponent } from './main/games/games.component';
+import { ContactsComponent } from './main/contacts/contacts.component';
+import { MentoringComponent } from './main/mentoring/mentoring.component';
+import { ReviewsComponent } from './main/reviews/reviews.component';
 
 export function factoryTranslateHttpLoader(
   httpClient: HttpClient
@@ -37,6 +42,11 @@ export function factoryTranslateHttpLoader(
     IndexComponent,
     HeaderComponent,
     AboutMeComponent,
+    TrainingsComponent,
+    GamesComponent,
+    ContactsComponent,
+    MentoringComponent,
+    ReviewsComponent,
   ],
   imports: [
     CommonModule,

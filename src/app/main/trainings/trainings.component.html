@@ -1,0 +1,27 @@
+<div
+  class="d-flex align-items-center justify-content-center mb-5"
+  *ngFor="let mentoring of trainingsArray; let index = index"
+  [ngClass]="{
+    'background-color': index % 2 === 1
+  }"
+>
+  <div
+    class="trainings d-flex"
+    [ngClass]="{
+      'flex-row-test': index % 2 === 0,
+      'flex-row-test2': index % 2 === 1
+    }"
+  >
+    <tui-avatar
+      class="mr-4"
+      tuiIsland
+      size="xxl"
+      [avatarUrl]="mentoring.image"
+    ></tui-avatar>
+    <span class="d-flex flex-column flex-basis-50 mr-4">
+      <h2 class="mt-3">{{ mentoring.name }}</h2>
+      <span [innerHTML]="sanitizer(mentoring.description)"></span>
+
+    </span>
+  </div>
+</div>

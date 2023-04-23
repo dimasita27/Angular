@@ -2,14 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../../animations';
 
 @Component({
-  selector: 'about-me',
-  templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.css'],
+  selector: 'app-games',
+  templateUrl: './games.component.html',
+  styleUrls: ['./games.component.css'],
   animations: [routerTransition],
   // eslint-disable-next-line @angular-eslint/no-host-metadata-property
   host: { '[@routerTransition]': '' },
 })
-export class AboutMeComponent implements OnInit {
+export class GamesComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
