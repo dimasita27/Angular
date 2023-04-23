@@ -29,6 +29,7 @@ import { GamesComponent } from './main/games/games.component';
 import { ContactsComponent } from './main/contacts/contacts.component';
 import { MentoringComponent } from './main/mentoring/mentoring.component';
 import { ReviewsComponent } from './main/reviews/reviews.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 export function factoryTranslateHttpLoader(
   httpClient: HttpClient
@@ -47,6 +48,7 @@ export function factoryTranslateHttpLoader(
     ContactsComponent,
     MentoringComponent,
     ReviewsComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
