@@ -19,6 +19,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { TuiTabsModule } from '@taiga-ui/kit';
 import { HomeComponent } from './main/home/home.component';
 import { CommonModule } from '@angular/common';
+import { TuiAvatarModule } from '@taiga-ui/kit';
 
 @NgModule({
   declarations: [AppComponent, IndexComponent, HeaderComponent, HomeComponent],
@@ -34,6 +35,7 @@ import { CommonModule } from '@angular/common';
     TuiTabsModule,
     TuiTabsModule,
     TuiSvgModule,
+    TuiAvatarModule,
   ],
   providers: [
     { provide: TUI_SANITIZER, useClass: NgDompurifySanitizer },

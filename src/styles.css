@@ -15,6 +15,45 @@
   --grey: #cccccc;
 }
 
+@font-face {
+  font-family: "OpenSansBold";
+  src: local("OpenSansBold"), url("fonts/OpenSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: local("OpenSansRegular"), url("fonts/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: local("OpenSansSemiBold"), url("fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "StalemateRegular";
+  src: local("StalemateRegular"), url("fonts/Stalemate-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Katerlin";
+  src: local("Katerlin"), url("fonts/Katerlin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
 .color-grey {
   color: var(--grey);
 }

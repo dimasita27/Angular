@@ -1,0 +1,16 @@
+:host {
+  padding: 0 20px;
+}
+span {
+  font-size: 1rem !important;
+  max-width: 40rem;
+}
+
+tui-avatar {
+  height: 370px !important;
+  width: 300px !important;
+  transition: 1s;
+}
+tui-avatar:hover {
+  transform: scale(1.1); /* Увеличиваем масштаб */
+}
