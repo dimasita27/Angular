@@ -60,3 +60,35 @@ export const trainingsArray: Trainings[] = [
     route: 'softSkill',
   },
 ];
+
+export interface Menu {
+  name: string;
+  route: string;
+}
+
+export const menuLink: Menu[] = [
+  {
+    name: 'Мастер-классы / Тренинги',
+    route: 'trainings',
+  },
+  {
+    name: 'Обо мне',
+    route: 'aboutMe',
+  },
+  {
+    name: 'Игры-тренажеры',
+    route: 'games',
+  },
+  {
+    name: 'Наставничество',
+    route: 'mentoring',
+  },
+  {
+    name: 'Отзывы',
+    route: 'reviews',
+  },
+  {
+    name: 'Контакты',
+    route: 'contacts',
+  },
+];

@@ -21,3 +21,22 @@ tui-avatar {
 .background-color {
   background-color: #f9f1f0;
 }
+
+.name{
+  min-width: 400px;
+}
+
+@media (max-width: 1500px) {
+  .trainings{
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+
+  @media (max-width: 900px) {
+    .trainings {
+      -ms-flex-pack: center !important;
+      justify-content: center !important;
+
+    }
+  }
+}

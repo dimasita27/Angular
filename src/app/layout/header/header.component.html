@@ -2,16 +2,17 @@
   <div
     class="d-flex flex-row align-items-center title"
     routerLink=""
-    (click)="test()"
+    (click)="home()"
   >
     <tui-svg src="tuiIconGithubLarge"></tui-svg>
     <div class="d-flex flex-column align-items-start pl-1">
-      <span class="text-l">{{'name' | translate}}</span>
+      <span class="text-l">{{ "name" | translate }}</span>
       <span class="text-xxs">Бизнес тренер</span>
     </div>
   </div>
 
   <tui-tabs
+    *ngIf="onResize() === 'big'"
     [(activeItemIndex)]="tabIndex"
     class="d-flex flex-row justify-content-end tabs"
   >
@@ -26,20 +27,26 @@
     <button tuiTab routerLink="reviews">Отзывы</button>
     <button tuiTab routerLink="contacts">Контакты</button>
   </tui-tabs>
-</div>
-<div>
-  <div [ngSwitch]="tabIndex">
-    <ng-container *ngSwitchCase="0"> </ng-container>
 
-    <ng-container *ngSwitchCase="1"> </ng-container>
-
-    <ng-container *ngSwitchCase="2"> </ng-container>
+  <div *ngIf="onResize() === 'small'">
+    <tui-hosted-dropdown
+      tuiDropdownAlign="left"
+      [content]="dropdown"
+      [(open)]="open"
+    >
+      <button tuiIconButton type="button" appearance="icon">
+        <!-- <span >{{'menu' | translate}}</span>-->
+        <tui-svg src="tuiIconMoreVerticalLarge"></tui-svg>
+      </button>
+    </tui-hosted-dropdown>
+    <ng-template #dropdown>
+      <tui-data-list [size]="'s'">
+        <button *ngFor="let item of menuLink" tuiOption (click)="onClick()">
+          <span routerLink="{{ item.route }}"> {{ item.name }} </span>
+        </button>
+      </tui-data-list>
+    </ng-template>
   </div>
 </div>
-<!--<ng-container [ngSwitch]="tabIndex">
-  <ng-template ngSwitchCase="0">
-    <home></home>
-  </ng-template>
 
-  <ng-template ngSwitchCase="1"> </ng-template>
-</ng-container>-->
+
