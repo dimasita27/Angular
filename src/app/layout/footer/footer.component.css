@@ -1,6 +1,21 @@
 .footer {
-  ;
-  height: 100px;
+
   background: #70616c;
   color: white;
 }
+
+@media (min-width: 599px) {
+  .padding{
+    padding-left: 25vw;
+  }
+}
+
+@media (max-width: 599px) {
+  .padding{
+    padding-left: 10vw;
+  }
+  .menu{
+    flex-direction: column !important;
+  }
+}
+

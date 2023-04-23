@@ -7,7 +7,7 @@
     [avatarUrl]="'./assets/image/Anna.jpg'"
     [rounded]="true"
   ></tui-avatar>
-  <h1 class="px-1 text-center">Бизнес-тренер Анна Торгашина</h1>
+  <h1 class="px-1 text-center">Бизнес-тренер {{ "name" | translate }}</h1>
   <span class="mt-3 px-1">Добро пожаловать на мой сайт</span>
   <span class="mt-5 px-1 text-center">
     Дипломированный психолог. Бизнес – тренер. Опыт ведения тренингов с 2005
@@ -19,7 +19,10 @@
   <div
     class="d-flex flex-row align-items-center justify-content-center flex-wrap trainings"
   >
-    <a class="d-flex flex-column align-items-center mb-3 pointer link" href="trainings#teem">
+    <a
+      class="d-flex flex-column align-items-center mb-3 pointer link"
+      href="trainings#teem"
+    >
       <tui-avatar
         class="mr-4"
         tuiIsland
@@ -29,7 +32,10 @@
       ></tui-avatar>
       <span class="mt-3"> Командообразование </span>
     </a>
-    <a class="d-flex flex-column align-items-center mb-3 pointer link" href="trainings#strengh">
+    <a
+      class="d-flex flex-column align-items-center mb-3 pointer link"
+      href="trainings#strengh"
+    >
       <tui-avatar
         class="mr-4"
         tuiIsland
@@ -39,7 +45,10 @@
       ></tui-avatar>
       <span class="mt-3"> Сила команды </span>
     </a>
-    <a class="d-flex flex-column align-items-center mb-3 pointer link" href="trainings#manager">
+    <a
+      class="d-flex flex-column align-items-center mb-3 pointer link"
+      href="trainings#manager"
+    >
       <tui-avatar
         class="mr-4"
         tuiIsland
@@ -49,7 +58,10 @@
       ></tui-avatar>
       <span class="mt-3"> Прокачка управленческих компетенций </span>
     </a>
-    <a class="d-flex flex-column align-items-center mb-3 pointer link" href="trainings#softSkill">
+    <a
+      class="d-flex flex-column align-items-center mb-3 pointer link"
+      href="trainings#softSkill"
+    >
       <tui-avatar
         class="mr-4"
         tuiIsland
@@ -59,7 +71,7 @@
       ></tui-avatar>
       <span class="mt-3"> Soft Skills </span>
     </a>
-    <div class="d-flex flex-column align-items-center mb-3 pointer" >
+    <div class="d-flex flex-column align-items-center mb-3 pointer">
       <tui-avatar
         tuiIsland
         size="xxl"

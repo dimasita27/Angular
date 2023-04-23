@@ -1,12 +1,7 @@
-<div class="footer w-100">
-  <div class="d-flex flex-row align-items-center justify-content-center">
-    <div class="d-flex flex-column align-items-center">
-      <span class="text-l">{{ "name" | translate }}</span>
-      <span class="d-flex align-items-center">
-        <img src="./assets/svg/mail.svg" alt="icon" />
-
-        <a class="ml-1" href="mailto:pav-24@mail.ru" target="_blank">AnnaTorgahina@mail.ru</a>
-      </span>
+<div class="footer w-100" xmlns="http://www.w3.org/1999/html">
+  <div class="d-flex flex-row padding">
+    <div class="d-flex flex-column align-items-start pr-5">
+      <span class="text-l pb-2 pl-1">{{ "name" | translate }}</span>
 
       <span>
         <a target="_blank" href="https://vk.com/id13784405">
@@ -17,12 +12,35 @@
         </a>
         <a> <img src="./assets/svg/whatsapp.svg" alt="" /> </a>
       </span>
+
+      <span class="pl-1">© 2005—2023</span>
+      <span class="pl-1"> Бизнес-треннер {{ "name" | translate }}</span>
+
+      <span class="d-flex align-items-center pb-2">
+        <img src="./assets/svg/mail.svg" alt="icon" />
+
+        <a class="ml-1" href="mailto:pav-24@mail.ru" target="_blank"
+          >AnnaTorgahina@mail.ru</a
+        >
+      </span>
+    </div>
+    <div class="d-flex flex-column align-items-start pr-1">
+      <span class="text-l pb-2">{{ "menu" | translate }}</span>
+
+      <span class="d-flex flex-row menu">
+        <span class="d-flex flex-column justify-content-start mr-2">
+          <a class="pr-5" tuiTab class="link" routerLink="trainings">
+            {{ "Мастер-классы / Тренинги " }}
+          </a>
+          <a tuiTab class="link" routerLink="games">Игры-тренажеры</a>
+          <a tuiTab class="link" routerLink="reviews">Отзывы</a>
+        </span>
+        <span class="d-flex flex-column justify-content-start">
+          <a tuiTab class="link" routerLink="aboutMe">Обо мне</a>
+          <a tuiTab class="link" routerLink="mentoring">Наставничество</a>
+          <a tuiTab class="link" routerLink="contacts">Контакты</a>
+        </span>
+      </span>
     </div>
   </div>
 </div>
-
-<ul class="tui-list tui-list_triangle">
-  <li class="tui-list__item">Code Review ($ 10)</li>
-  <li class="tui-list__item">
-  </li>
-</ul>
