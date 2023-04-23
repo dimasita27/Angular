@@ -39,20 +39,7 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "StalemateRegular";
-  src: local("StalemateRegular"), url("fonts/Stalemate-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Katerlin";
-  src: local("Katerlin"), url("fonts/Katerlin.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-}
+
 
 .color-grey {
   color: var(--grey);
@@ -133,4 +120,14 @@
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: black;
 }

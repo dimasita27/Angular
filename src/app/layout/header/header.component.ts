@@ -17,5 +17,9 @@ export class HeaderComponent implements OnInit {
 
   constructor() {}
 
+  test() {
+    this._tabIndex = -1;
+  }
+
   ngOnInit(): void {}
 }

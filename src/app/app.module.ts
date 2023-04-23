@@ -17,12 +17,17 @@ import { of } from 'rxjs';
 import { IndexComponent } from './main/index/index.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { TuiTabsModule } from '@taiga-ui/kit';
-import { HomeComponent } from './main/home/home.component';
 import { CommonModule } from '@angular/common';
 import { TuiAvatarModule } from '@taiga-ui/kit';
+import { AboutMeComponent } from './main/about-me/about-me.component';
 
 @NgModule({
-  declarations: [AppComponent, IndexComponent, HeaderComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    IndexComponent,
+    HeaderComponent,
+    AboutMeComponent,
+  ],
   imports: [
     CommonModule,
     BrowserModule,

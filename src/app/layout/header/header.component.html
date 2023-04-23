@@ -1,5 +1,9 @@
 <div class="wrapper d-flex align-items-center justify-content-center">
-  <div class="d-flex flex-row align-items-center title">
+  <div
+    class="d-flex flex-row align-items-center title"
+    routerLink=""
+    (click)="test()"
+  >
     <tui-svg src="tuiIconGithubLarge"></tui-svg>
     <div class="d-flex flex-column align-items-start pl-1">
       <span class="text-l">Анна Торгашина</span>
@@ -15,7 +19,8 @@
       {{ "Мастер-классы / Тренинги " }}
     </button>
 
-    <button tuiTab>Обо мне</button>
+    <button tuiTab><a class="link" routerLink="aboutMe"> Обо мне </a></button>
+
     <button tuiTab>Игры-тренажеры</button>
     <button tuiTab>Наставничество</button>
     <button tuiTab>Отзывы</button>
