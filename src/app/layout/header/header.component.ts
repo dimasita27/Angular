@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   set tabIndex(value: number) {
     this._tabIndex = value;
   }
-  _tabIndex: number = 0;
+  _tabIndex: number = -1;
 
   constructor() {}
 

@@ -6,11 +6,15 @@ span {
   max-width: 40rem;
 }
 
-tui-avatar {
+tui-avatar  {
   height: 370px !important;
   width: 300px !important;
   transition: 1s;
 }
 tui-avatar:hover {
   transform: scale(1.1); /* Увеличиваем масштаб */
+}
+
+.trening{
+  max-width: 1000px;
 }

@@ -21,6 +21,16 @@ import { CommonModule } from '@angular/common';
 import { TuiAvatarModule } from '@taiga-ui/kit';
 import { AboutMeComponent } from './main/about-me/about-me.component';
 
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+export function factoryTranslateHttpLoader(
+  httpClient: HttpClient
+): TranslateHttpLoader {
+  return new TranslateHttpLoader(httpClient, './assets/i18n/');
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +51,16 @@ import { AboutMeComponent } from './main/about-me/about-me.component';
     TuiTabsModule,
     TuiSvgModule,
     TuiAvatarModule,
+
+    HttpClientModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'ru',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: factoryTranslateHttpLoader,
+        deps: [HttpClient],
+      },
+    }),
   ],
   providers: [
     { provide: TUI_SANITIZER, useClass: NgDompurifySanitizer },

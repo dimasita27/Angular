@@ -25,7 +25,8 @@
 
 @font-face {
   font-family: "OpenSansRegular";
-  src: local("OpenSansRegular"), url("fonts/OpenSans-Regular.ttf") format("truetype");
+  src: local("OpenSansRegular"),
+    url("fonts/OpenSans-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
   font-display: swap;
@@ -33,13 +34,12 @@
 
 @font-face {
   font-family: "OpenSansSemiBold";
-  src: local("OpenSansSemiBold"), url("fonts/OpenSans-SemiBold.ttf") format("truetype");
+  src: local("OpenSansSemiBold"),
+    url("fonts/OpenSans-SemiBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
   font-display: swap;
 }
-
-
 
 .color-grey {
   color: var(--grey);
@@ -77,6 +77,9 @@
   color: var(--white);
 }
 
+.bg-gray {
+  background: rgba(74, 201, 155, 0.12);
+}
 
 .text-xxs {
   font-size: 0.625rem !important; /*10*/

@@ -43,6 +43,11 @@
                 "glob": "**/*",
                 "input": "node_modules/@taiga-ui/icons/src",
                 "output": "assets/taiga-ui/icons"
+              },
+              {
+                "glob": "**/*",
+                "input": "assets/i18n/",
+                "output": "i18n/"
               }
             ],
             "styles": [
